@@ -8,6 +8,7 @@
 .card {
   width: 400px;
   padding: 2em;
+  border-radius: 10px;
 }
 
 .card input {
@@ -17,4 +18,9 @@
 
 .card img {
   width: 100%;
+}
+
+.dark .card {
+  background-color: #1b1b1b;
+  color: white;
 }
