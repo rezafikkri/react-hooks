@@ -1,10 +1,14 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
   const [name, setName] = useState('Reza Sariful Fikri');
   const [imageSrc, setImageSrc] = useState('https://cdn.pixabay.com/photo/2015/12/05/06/20/kid-1077793_960_720.jpg');
+
+  useEffect(() => {
+    document.title = name;
+  }, [name]);
 
   return (
     <div className="card">
